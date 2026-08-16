@@ -1,0 +1,26 @@
+"Let's resume HR Knowledge Assistant."
+
+# Create a virtual environment
+python -m venv venv
+
+# Activate it
+	
+ venv/Scripts/activate
+
+2. Command to install all packages  from requirement.txt
+pip install -r requirements.txt
+
+Next step → Integrate the local reranker into RAGService
+
+Previous question: How many weeks of maternity leave are provided?
+Current question: What about someone with 2 children?
+
+
+for execution keep 3 terminal open in
+1: run gemma model --- ollama run gemma3:1b
+2. run uvicorn main:app --reload
+3. current /streamlit
+
+streamlit run streamlit_app.py 
+
+python -m tests.test_llm
